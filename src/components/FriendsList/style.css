@@ -1,0 +1,36 @@
+.title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #ef6c00;
+}
+
+.friends-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.friend-item {
+  list-style: none;
+}
+
+.friend-card {
+  padding: 16px 0px;
+  width: 200px;
+  height: 200px;
+  background-color: #33343b;
+  margin-bottom: 12px;
+  color: #ef6c00;
+  border-radius: 10px;
+}
+
+.friend-profile {
+  width: 120px;
+  aspect-ratio: 1;
+}
+
+.friend-name {
+  color: #fafaf9;
+}

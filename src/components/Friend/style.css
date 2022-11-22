@@ -1,0 +1,28 @@
+.friend-container {
+  width: 100vw;
+  height: 100vh;
+  background: #33343b;
+  padding: 24px;
+}
+
+.friend-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-details-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fafaf9;
+}
+
+.friend-details-description {
+  color: #fafaf9;
+}
+
+.friend-details-profile {
+  width: 320px;
+  aspect-ratio: 1;
+}
