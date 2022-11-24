@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #ef6c00;
+  --secondary-color: #22262d;
+  --accent-color: #fafaf9;
+  --dark-grey-color: #33343b;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -14,5 +21,5 @@ body {
 }
 
 body {
-  background-color: #22262d;
+  background-color: var(--secondary-color);
 }

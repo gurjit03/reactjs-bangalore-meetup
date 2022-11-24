@@ -1,12 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
-import { Outlet, matchPath, useLocation } from "react-router-dom";
-
-function getTitle(url) {
-  if (matchPath({ path: "/friend/:id" }, url)) return "My Friend Details";
-  if (matchPath(url, "/")) return "Animated Shared Layout Demo";
-  return "";
-}
+import { Outlet, useLocation } from "react-router-dom";
+import { getTitle } from "./utils";
 
 const Layout = () => {
   const location = useLocation();
