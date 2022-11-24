@@ -1,7 +1,7 @@
 .friend-container {
   width: 100vw;
   height: 100vh;
-  background: #33343b;
+  background: var(--dark-grey-color);
   padding: 24px;
 }
 
@@ -15,11 +15,11 @@
 .friend-details-text {
   font-size: 24px;
   font-weight: 700;
-  color: #fafaf9;
+  color: var(--accent-color);
 }
 
 .friend-details-description {
-  color: #fafaf9;
+  color: var(--accent-color);
 }
 
 .friend-details-profile {
