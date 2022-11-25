@@ -5,8 +5,7 @@ import friends from "../../data/friends";
 import "./style.css";
 
 const Friend = () => {
-  const { id: idStr } = useParams();
-  const id = Number(idStr);
+  const { id } = useParams();
   const friend = friends.find((f) => f.id === id);
 
   if (!friend) return <div>No friend found</div>;
@@ -24,9 +23,12 @@ const Friend = () => {
           layoutId={profileId}
         />
 
-        <motion.p className="friend-details-text" layoutId={nameId}>
-          {friend.name} - {friend.age}
-        </motion.p>
+        <motion.h3
+          className="friend-details-text friend-details-name"
+          layoutId={nameId}
+        >
+          {friend.name} {friend.lastName}
+        </motion.h3>
       </motion.div>
       <motion.p
         initial={{ y: "30px", opacity: 0 }}

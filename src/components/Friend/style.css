@@ -18,6 +18,10 @@
   color: var(--accent-color);
 }
 
+.friend-details-name {
+  font-size: 32px;
+}
+
 .friend-details-description {
   color: var(--accent-color);
   width: clamp(100px, 80%, 70vw);
