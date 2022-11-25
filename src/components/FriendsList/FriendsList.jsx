@@ -4,24 +4,44 @@ import { Link } from "react-router-dom";
 import friends from "../../data/friends";
 import "./style.css";
 
+const container = {
+  hidden: {
+    x: "-50px",
+    opacity: 0,
+    transition: {
+      delayChildren: 1,
+      staggerChildren: 0.05,
+    },
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      staggerDirection: -1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, x: "-20px" },
+  show: { opacity: 1, x: 0 },
+};
+
 const FriendsList = () => {
   return (
     <motion.ul
       className="friends-list"
-      initial={{
-        x: "-50px",
-      }}
-      animate={{
-        x: 0,
-      }}
+      initial="hidden"
+      animate="show"
+      variants={container}
     >
       {friends.map((f) => {
         const containerId = f.id;
         const profileId = `${f.id}-profile`;
         const nameId = `${f.id}-name`;
         return (
-          <Link key={f.id} to={`friend/${f.id}`}>
-            <motion.li className="friend-item">
+          <motion.li key={f.id} className="friend-item" variants={item}>
+            <Link to={`friend/${f.id}`}>
               <motion.article className="friend-card" layoutId={containerId}>
                 <motion.img
                   initial={{ opacity: 0 }}
@@ -34,8 +54,8 @@ const FriendsList = () => {
                   {f.name}
                 </motion.p>
               </motion.article>
-            </motion.li>
-          </Link>
+            </Link>
+          </motion.li>
         );
       })}
     </motion.ul>

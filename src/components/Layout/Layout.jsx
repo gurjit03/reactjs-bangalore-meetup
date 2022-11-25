@@ -1,6 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import {
+  Outlet,
+  ScrollRestoration,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import { getTitle } from "./utils";
 import "./style.css";
 
@@ -29,6 +34,7 @@ const Layout = () => {
         <h3 className="title">{title}</h3>
       </div>
       <AnimatePresence>{<Outlet />}</AnimatePresence>
+      <ScrollRestoration />
     </div>
   );
 };
