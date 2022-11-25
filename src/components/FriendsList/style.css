@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding: 0;
   flex-wrap: wrap;
 }
 
@@ -21,9 +22,9 @@
   width: 200px;
   height: 200px;
   background-color: var(--dark-grey-color);
-  margin-bottom: 12px;
   color: var(--primary-color);
   border-radius: 10px;
+  text-align: center;
 }
 
 .friend-profile {
