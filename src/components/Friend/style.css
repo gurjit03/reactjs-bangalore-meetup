@@ -20,7 +20,7 @@
 
 .friend-details-description {
   color: var(--accent-color);
-  width: clamp(100px, 60%, 90vw);
+  width: clamp(100px, 80%, 70vw);
   margin: 0 auto;
 }
 
