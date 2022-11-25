@@ -1,98 +1,90 @@
+import { faker } from "@faker-js/faker";
+
+const PARAGRAPHS = 5;
+
 const friends = [
   {
-    id: 1,
-    age: 27,
-    name: "John doe",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face1.svg",
   },
   {
-    id: 2,
-    age: 26,
-    name: "John doe 2",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face2.svg",
   },
   {
-    id: 3,
-    age: 25,
-    name: "John doe 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face3.svg",
   },
   {
-    id: 4,
-    age: 22,
-    name: "John doe 4",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face4.svg",
   },
   {
-    id: 5,
-    age: 21,
-    name: "John doe 1",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face1.svg",
   },
   {
-    id: 6,
-    age: 25,
-    name: "John doe 7",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face2.svg",
   },
   {
-    id: 7,
-    age: 28,
-    name: "John doe 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face3.svg",
   },
   {
-    id: 8,
-    age: 23,
-    name: "John doe 4",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face4.svg",
   },
   {
-    id: 9,
-    age: 21,
-    name: "John doe 3",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face1.svg",
   },
   {
-    id: 10,
-    age: 25,
-    name: "John doe 9",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face2.svg",
   },
   {
-    id: 11,
-    age: 28,
-    name: "John doe",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face3.svg",
   },
   {
-    id: 12,
-    age: 23,
-    name: "John doe 6",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas. Tempus egestas sed sed risus. Fermentum iaculis eu non diam phasellus vestibulum lorem. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. A diam maecenas sed enim ut sem viverra aliquet eget. Neque gravida in fermentum et. Venenatis cras sed felis eget velit aliquet sagittis id consectetur.",
+    id: faker.datatype.uuid(),
+    lastName: faker.name.lastName(),
+    name: faker.name.firstName(),
+    description: faker.lorem.paragraph(PARAGRAPHS),
     src: "/face4.svg",
   },
 ];

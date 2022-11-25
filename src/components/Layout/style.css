@@ -1,4 +1,15 @@
 .title {
-  font-size: 28px;
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+.container {
+  position: relative;
+}
+
+.back-arrow {
+  width: 32px;
+  position: absolute;
+  left: 24px;
   color: var(--primary-color);
 }
