@@ -1,13 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import friends from "../../data/friends";
+import FriendListItem from "./FriendListItem";
 import "./style.css";
 
-const friendsListVariants = {
-  initial: { x: "-50px" },
-  animate: {
+const container = {
+  hidden: {
+    opacity: 0,
+    x: "-50px",
+  },
+  show: {
+    opacity: 1,
     x: 0,
+    transition: {
+      delayChildren: 1,
+      staggerChildren: 0.05,
+    },
   },
 };
 
@@ -15,30 +23,13 @@ const FriendsList = () => {
   return (
     <motion.ul
       className="friends-list"
-      variants={friendsListVariants}
-      initial="initial"
-      animate="animate"
+      initial="hidden"
+      animate="show"
+      variants={container}
     >
-      {friends.map((f) => {
-        return (
-          <Link key={f.id} to={`friend/${f.id}`}>
-            <motion.li className="friend-item" variants={friendsListVariants}>
-              <motion.article className="friend-card" layoutId={f.id}>
-                <motion.img
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  layoutId={`${f.id}-profile`}
-                  className="friend-profile"
-                  src={f.src}
-                />
-                <motion.p className="friend-name" layoutId={`${f.id}-name`}>
-                  {f.name}
-                </motion.p>
-              </motion.article>
-            </motion.li>
-          </Link>
-        );
-      })}
+      {friends.map((f) => (
+        <FriendListItem key={f.id} friend={f} />
+      ))}
     </motion.ul>
   );
 };

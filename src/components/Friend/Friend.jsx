@@ -9,9 +9,9 @@ const Friend = () => {
   const friend = friends.find((f) => f.id === id);
 
   if (!friend) return <div>No friend found</div>;
+  const containerId = friend.id;
   const profileId = `${friend.id}-profile`;
   const nameId = `${friend.id}-name`;
-  const containerId = friend.id;
   return (
     <motion.div className="friend-container" layoutId={containerId}>
       <motion.div className="friend-details-container">
