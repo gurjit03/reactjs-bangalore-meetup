@@ -23,6 +23,9 @@ const FriendListItem = ({ friend }) => {
           <motion.img
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.2,
+            }}
             layoutId={profileId}
             className="friend-profile"
             src={friend.src}
